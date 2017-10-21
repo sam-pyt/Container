@@ -1,3 +1,5 @@
+
+
 __author__ = 'sam'
 __version__ = 1.0
 
@@ -18,6 +20,13 @@ class Container():
 
     def remove(self,item):
         'remove item from the container'
+        for k in dictionary.keys():
+            if dictionary[k]==value:
+                return k
+        return None
+    
+    def getKey(self,dictionary,value):
+        'get a key by value.'
         for k in dictionary.keys():
             if dictionary[k]==value:
                 return k
